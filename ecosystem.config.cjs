@@ -12,7 +12,7 @@ module.exports = {
       max_memory_restart: "256M",
       env: {
         NODE_ENV: "production",
-        NODE_EXTRA_CA_CERTS: "/usr/local/share/ca-certificates/russian-ca-bundle.pem"
+        NODE_EXTRA_CA_CERTS: "/usr/local/share/ca-certificates/russian-ca-bundle.pem",
       },
     },
   ],
