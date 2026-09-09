@@ -6,7 +6,7 @@ import { registerWebhook } from './webhook.js';
 const fastify: FastifyInstance = Fastify({ logger: true });
 
 registerWebhook(fastify);
-registerMaxSubscriptions(fastify);
+// registerMaxSubscriptions(fastify);
 
 const start = async (): Promise<void> => {
     try {
