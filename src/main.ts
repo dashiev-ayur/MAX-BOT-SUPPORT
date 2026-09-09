@@ -1,9 +1,11 @@
 import Fastify, { type FastifyInstance } from 'fastify';
+import { registerMaxSubscriptions } from './max-subscriptions.js';
 import { registerWebhook } from './webhook.js';
 
 const fastify: FastifyInstance = Fastify({ logger: true });
 
 registerWebhook(fastify);
+registerMaxSubscriptions(fastify);
 
 const start = async (): Promise<void> => {
     try {
