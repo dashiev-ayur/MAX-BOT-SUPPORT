@@ -2,7 +2,7 @@ module.exports = {
   apps: [
     {
       name: "max-bot",
-      cwd: "/opt/MAX-SUPPORT-BOT",
+      cwd: "/opt/MAX-BOT-SUPPORT",
       script: "dist/main.js",
       interpreter: "node",
       node_args: "--env-file=.env",
