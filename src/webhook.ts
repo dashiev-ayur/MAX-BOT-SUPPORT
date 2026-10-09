@@ -8,7 +8,7 @@ import { logMessage, sendToUser } from './max-api.js';
 export function registerWebhook(fastify: FastifyInstance): void {
     
     fastify.get('/', async (req, reply) => {
-        return reply.code(200).send({ ok: true });
+        return reply.code(200).send({ ok: true, value: 1 });
     });
 
     fastify.post('/webhook', async (req, reply) => {
